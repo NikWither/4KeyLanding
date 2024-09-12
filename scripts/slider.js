@@ -3,7 +3,7 @@ const slideRight = document.querySelector('.right_slide')
 const slideLeft = document.querySelector('.left_slide')
 const upButton = document.querySelector('.up_button')
 const downButton = document.querySelector('.down_button')
-const slidesLength = 4;
+const slidesLength = 4; // количество свайпов
 
 console.log(slidesLength)
 

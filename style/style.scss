@@ -73,7 +73,7 @@ body {
             }
         }
     }
-    // не помню 
+    // всплывающая клавиатура
     .preview {
 
         display: flex;
@@ -787,4 +787,491 @@ body {
             }
         }
     }
+
+    // ноутбуки или древние компы 870-1250
+    @media (max-width: 1250px) {
+        
+        .slider {
+            .first {
+    
+                .blocks {
+                    .row {
+                        .block {
+                            width: 210px;
+                            height: 210px;
+                            p {
+                                margin-left: 30px;
+                                padding: 5px;
+                                font-size: 23px;
+                                font-weight: 300;
+                                line-height: 39.68px;
+                                z-index: 6;
+                                transition: all 0.5s ease-in-out;
+                            }
+    
+                            img {
+                                width: 160px;
+                                left: 20px;
+                            }
+                        }
+    
+                        .block:hover p {
+                            font-weight: 400;
+                            scale: 1.16
+                        }
+    
+                        // for manager
+                        .bottom {
+                            width: 420px;
+                        }
+                    }
+                }
+    
+                .right {
+    
+                    width: 100%;
+    
+                    .result {
+                        height: 420px;
+                        &__info {
+                            .text_section {
+                                padding-top: 20px;
+                                margin-left: 50px;
+    
+                                h2 {
+                                    font-size: 25px;
+                                    font-weight: 600;
+                                    line-height: 39.68px;
+                                }
+                
+                                p {
+                                    margin-top: 3px;
+    
+                                    font-weight: 400;
+                                    line-height: 24.8px;
+                                    font-size: 15px;
+                                }
+                            }                    
+    
+                            .image_section {
+    
+                                margin-top: 15px;
+    
+                                &__row {
+                                    column-gap: 25px;
+    
+                                    .item {
+                                        text-align: center;
+                                        
+                                        p {
+                                            margin-top: 10px;
+    
+                                            color: #464D63;
+                                            font-weight: 600;
+                                            font-size: 15px;
+                                        }
+
+                                        img {
+                                            width: 90px;
+                                        }
+                                    }
+                                }
+    
+                                .help {
+                                    margin-top: 10px;
+                                }
+                            }
+    
+                            // for PM
+    
+                            .pm {
+                                margin-top: 26px;
+                                margin-left: 50px;
+
+                                img {
+                                    width: 370px;
+
+                                }
+                            }
+    
+                            // for System Analys
+    
+                            .SA {
+                                margin-top: 50px;
+                            }
+                        }
+    
+                        .active {
+                            opacity: 1;
+                        }
+                    }
+    
+                    .result_chat {
+    
+                        height: 210px;
+    
+                        p {
+                            margin-top: 22px;
+                            margin-left: 23px;
+                            padding-right: 5px;
+    
+                            font-weight: 300;
+                            font-size: 16px;
+                        }
+    
+                        .button_section {
+    
+                            margin-top: 10px;
+                            margin-left: 13px;
+    
+                            padding: 0px 8px 0px 13px;
+    
+                            button {
+                                padding: 5px 15px;                                
+    
+                                .contact_btn {
+                                    padding: 10px;
+                                }
+    
+                                span {
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                }
+    
+                                img {
+                                    margin-left: 28px;
+                                    padding: 8px;
+                                }
+                            }
+    
+                            button:hover {
+                                scale: 1.1;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .info {
+    
+                margin-top: 70px;
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                padding-bottom: 70px;
+    
+                &__item {
+                    
+                    h3 {
+                        font-size: 35px;
+                        font-weight: 800;
+                    }
+    
+                    p {
+                        margin-top: 5px;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+        .swipper {
+            
+            &__container {
+    
+                .left_slide {
+    
+                    .card_item {
+                        // background-color: #7FACE1;
+    
+                        // для benechat
+
+                        flex-direction: column;
+                        justify-content: center;
+            
+                        .images_section_benechat {
+                            margin: 0 auto;
+            
+                            width: 450px;
+                            height: 473px;
+
+                            .image_1 {
+                                width: 273px;
+                                height: 202.2px;
+                            }
+        
+            
+                            .image_2 {
+                                top: 226px;
+                                left: 150px;
+                                width: 273px;
+                                height: 202.2px;
+                                z-index: 200;
+                            }
+            
+                            .image_3 {
+                                top: 104px;
+                                left: 60px;
+                                z-index: 10;
+                                width: 300px;
+                                height: 202.2px;
+                            }
+            
+            
+                        }
+            
+                        .benechat_text {
+                            margin-top: 60px;
+                        }
+                
+                        .images_section__tickets_two {
+                            margin: 0 auto;
+            
+                            width: 560px;
+                            height: 473px;
+            
+                            img {
+                                width: 408px;
+                                height: 285px;
+                            }
+            
+                            .image_1 {
+                                top: 116px;
+                                right: 0px;
+                                z-index: 10;
+                            }
+                        }
+
+                        .images_section_clipper {
+                            img {
+                                width: 566px;
+                                height: 281px;
+                            }
+                        }
+            
+                        h2 {
+                            margin-top: 109px;
+                            font-size: 53px;
+                        }
+                    }
+                }
+    
+                .left_slide > div {
+                }
+    
+                .right_slide {
+    
+                    .card_item {
+
+                        flex-direction: column;
+                        justify-content: center;
+    
+                        .description {
+            
+                            margin: 0 auto;
+                
+                            &__title {
+                                color: #D9E6F5;
+                                font-size: 30px;   
+                            }
+
+                            .videoticket {
+                                font-size: 23px;
+                            }
+                
+                            &__description {
+                                margin-top: 30px;
+                            }
+                        }
+                
+                
+                        .stack {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                
+                            margin: 102px auto 0px;
+                            padding: 26px 25px;
+                            background-color: #FEFEFE29;
+                            border-radius: 27px;
+                
+                            max-width: 410px;
+                
+                            .row {
+                
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: flex-end;
+                
+                                .item {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    padding: 6px;
+                
+                                    h4 {
+                                        font-size: 13px;
+                                        color: #464D63;
+                                        text-align: center;
+                                        font-weight: 600;
+                
+                                        font-family: "Kadwa", serif;
+                                    }
+                                }
+                            }
+                
+                            .withTwo {
+                                justify-content: center;
+                                gap: 50px;
+                            }
+                        }
+                
+                        .btn_section {
+                            margin-top: 40px;
+                            display: flex;
+                            justify-content: center;
+                
+                            &__button {
+                
+                                padding: 20px 30px;
+                                background-color: #494D5A;
+                                border-radius: 30px;
+                            }
+            
+                            img {
+                            }
+                        }
+                    }
+
+                }
+    
+                .right_slide > div {
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgb(96, 97, 97);
+                }
+    
+                .button_section {
+    
+                    button {
+                        position: absolute;
+                        left: 60%;
+                        top: 50%;
+                        z-index: 100;
+                    }
+    
+                    .down_button {
+                        transform: translateX(-100%);
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+    
+                    .up_button {
+                        transform: translateY(-100%);
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+            }
+        }
+
+        .contact {
+    
+            .rectangle {
+
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 60px;
+                background-color: #494D5A;
+                width: 760px;
+                padding: 15px;
+                margin-bottom: 81px;
+    
+                &__title {
+                    margin-top: 100px;
+    
+                    font-size: 75px;
+                }
+    
+                .form {
+                    
+                    
+                    margin-top: 104px;
+
+                    display: flex;
+                    justify-content: center;
+                    &__info {
+
+                        position: relative;
+
+                        .name {
+                        }
+
+                        input {
+                            margin: 0px;
+                        }
+    
+                        input::placeholder {
+                        }
+    
+                        .border {
+                        }
+    
+                        .email {
+                            margin-top: 30px;
+                            padding-bottom: 40px;
+                        }
+
+                        .button_chat {
+                            position: absolute;
+                            bottom: -20px;
+                            right: 20px;
+                        }
+                    }
+                }
+    
+                &__contacts {
+                    margin-top: 57px;
+    
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 35px;
+    
+                    font-size: 15px;
+                    font-weight: 400;
+                    
+                    
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 8px;
+                        transition: all 0.5s ease-in-out;
+    
+                        a {
+                            color: white;
+    
+                            transition: all 0.5s ease-in-out;
+                        }
+    
+                        // a:hover {
+                        //     font-weight: 450;
+                        //     scale: 1.2
+                        // }
+                    }
+    
+                    .item:hover {
+                        font-weight: 450;
+                        scale: 1.2;
+                    }
+    
+                    margin-bottom: 56px;
+                }
+            }
+        }
+    }
+
+    // планшеты 
+
+    // телефоны 
 }
