@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- main container -->
+    <div class="boss">
+
+        <div class="loader">
+            <div class="loader__section">
+                <div class="share">
+                    <h2 id="solutions" class="">Tailored</h2>
+                    <h2 id="tailored" class="non_visible">solutions</h2>
+                    <h2 id="forKeyClient" class="non_visible">for key clients</h2>
+                </div>
+            </div>
+            <div class="keyboard non_visible">
+                <div class="keyboard__keyaboards">
+                    <img src="img/btn_1.png" alt="" class="keyboard__image">
+                    <img src="img/btn_2.png" alt="" class="keyboard__image">
+                    <img src="img/btn_3.png" alt="" class="keyboard__image">
+                    <img src="img/btn_4.png" alt="" class="keyboard__image">
+                </div>
+                <h3 class="keyboard__text" id="developmentTeam">development team</h3>
+            </div>
+        </div>
+
+        <header class="header non_visible">
+            <nav class="nav">
+                <div class="nav__logo">4key development team</div>
+                <ul class="nav__nav">
+                    <li class="item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="item">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="item">
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                    <li class="item active">
+                        <a href="#hireUs">Hire us</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- S L I D E R -->
+
+        <section class="slider" id="about">
+
+            <div class="first">
+                <div class="blocks">
+
+                    <div class="row">
+                        <div class="block" id="frontend">
+                            <p>Front-end <br>developer</p>
+                            <img src="img/frontendJob.png" alt="" class="block__img">
+                        </div>
+
+                        <div class="block" id="backend">
+                            <p>Back-end <br>developer</p>
+                            <img src="img/backendJob.png" alt="" class="block__img">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="block" id="devops">
+                            <p>Dev-Ops</p>
+                            <img src="img/devOpsJob.png" alt="" class="block__img">
+                        </div>
+
+                        <div class="block" id="systemAnalyst">
+                            <p>System <br>Analyst</p>
+                            <img src="img/SYjob.png" alt="" class="block__img">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="block bottom" id="projectManager">
+                            <p>Project <br>Manager</p>
+                            <img src="img/projectManagerJob.png" alt="" class="block__img active_img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="result">
+
+
+                        <!-- PROJECT MANAGER -->
+                        <div class="result__info active" id="projectManager_slide">
+                            <div class="text_section">
+                                <h2>Project manager</h2>
+                                <p>Planning is only way to manage deadlines </p>
+                            </div>
+                            <!-- gif section -->
+                            <div class="pm">
+                                <img src="img/project_info.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- SYSTEM ANALYST -->
+                        <div class="result__info non_visible" id="systemAnalyst_slide">
+                            <div class="text_section">
+                                <h2>System Analyst</h2>
+                                <p>Aligning technology solutions with business needs for optimized performance and efficiency.</p>
+                            </div>
+                            <div class="image_section SA">
+                                <div class="image_section__row">
+
+                                    <div class="item">
+                                        <img src="img/uml.png" alt="">
+                                        <p>UML</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/figma.png" alt="">
+                                        <p>Figma</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/Confluence.png" alt="">
+                                        <p>Confluence</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dev-Ops -->
+
+                        <div class="result__info non_visible" id="devops_slide">
+                            <div class="text_section">
+                                <h2>Dev-Ops</h2>
+                                <p>Streamlining development and operations for faster, more reliable software delivery</p>
+                            </div>
+                            <div class="image_section main">
+
+                                <div class="image_section__row">
+
+                                    <div class="item">
+                                        <img src="img/kubernetes.png" alt="">
+                                        <p>Kubernetes</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/docker.png" alt="">
+                                        <p>Docker</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/jenkis.png" alt="">
+                                        <p>Jenkins</p>
+                                    </div>
+                                </div>
+
+                                <div class="image_section__row help">
+
+                                    <div class="item">
+                                        <img src="img/grafana.png" alt="">
+                                        <p>Grafana</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/Group 1000001357.png" alt="">
+                                        <p>Prometheus</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/terraform.png" alt="">
+                                        <p>Terraform</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Backend developer -->
+
+                        <div class="result__info non_visible" id="backend_slide">
+                            <div class="text_section">
+                                <h2>Back-end developer</h2>
+                                <p>Powering the backbone of applications with robust and scalable server-side logic</p>
+                            </div>
+                            <div class="image_section main">
+
+                                <div class="image_section__row">
+
+                                    <div class="item">
+                                        <img src="img/pythonAg1.png" alt="">
+                                        <p>Python</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/js.png" alt="">
+                                        <p>JavaScript</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="image_section__row help">
+
+                                    <div class="item">
+                                        <img src="img/tsAg.png" alt="">
+                                        <p>TypeScript</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/javaAg.png" alt="">
+                                        <p>Java</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/go.png" alt="">
+                                        <p>Go</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Frontend developer -->
+
+                        <div class="result__info non_visible" id="frontend_slide">
+                            <div class="text_section">
+                                <h2>Front-end developer</h2>
+                                <p>Crafting seamless user experiences with intuitive and responsive interfaces.</p>
+                            </div>
+                            <div class="image_section main">
+
+                                <div class="image_section__row">
+
+                                    <div class="item">
+                                        <img src="img/vueAg.png" alt="">
+                                        <p>Vue.js</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/HTML.png" alt="">
+                                        <p>HTML5</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/Svetle.png" alt="">
+                                        <p>Svelte</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="image_section__row help">
+
+                                    <div class="item">
+                                        <img src="img/ReactAg.png" alt="">
+                                        <p>React.js</p>
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="img/Next.png" alt="">
+                                        <p>Next.js</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="result_chat">
+                        <p>All the essential roles needed to tackle any task and <br>project. We have the expertise and collaboration skills to <br>ensure successful project completion.</p>
+                        <div class="button_section">
+                            <button class="contact_btn">
+                                <span>Hire us</span>                            
+                                <img src="img/Arrow.png" alt="">
+                            </button>
+
+                            <img src="img/star.png" alt="" class="rotating_star">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="info">
+                <div class="info__item">
+                    <h3>15</h3>
+                    <p>members</p>
+                </div>
+
+                <div class="info__item">
+                    <h3>90+</h3>
+                    <p>projects</p>
+                </div>
+
+                <div class="info__item">
+                    <h3>10+</h3>
+                    <p>years of experience</p>
+                </div>
+
+                <div class="info__item">
+                    <h3>70</h3>
+                    <p>satisfied clients</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- S W I P E R -->
+
+        <section class="swipper">
+            <div class="swipper__container">
+                <!-- LEFT SLIDE -->
+
+                <div class="left_slide">
+
+                    <!-- Videoconference -->
+                    <div class="card_item">
+                        <div class="benechat__one">
+
+                            <div class="images_section__tickets_two">
+                                <img src="img/conference1.png" alt="" class="image_1">
+                                <img src="img/conference2.png" alt="" class="image_2">
+                            </div>
+            
+                            <h2 class="video_text">VideoConference</h2>
+            
+                        </div>
+                    </div>
+
+                    <!-- VideoTicket -->
+                    <div class="card_item">
+                        <div class="benechat__one">
+
+                            <div class="images_section__tickets_two">
+                                <img src="img/ticket1.png" alt="" class="image_1">
+                                <img src="img/ticket2.png" alt="" class="image_2">
+                            </div>
+            
+                            <h2>VideoTicket</h2>
+            
+                        </div>
+                        <div class="figure_1"></div>
+                    </div>
+
+                    <!-- CLIPPER -->
+                    <div class="card_item">
+                        <div class="benechat__one">
+
+                            <div class="images_section_clipper">
+                                <img src="img/clipper.png" alt="">
+                            </div>
+            
+                            <h2 class="clipper_text">Clipper</h2>
+            
+                        </div>
+                        <div class="figute_1"></div>
+                    </div>
+                    
+                    <!-- BENECHAT -->
+                    <div class="card_item">
+                        <div class="benechat__one">
+                            <div class="images_section_benechat">
+                                <img src="img/BC3.png" alt="" class="image_1">
+                                <img src="img/BC2.png" alt="" class="image_2">
+                                <img src="img/BC1.png" alt="" class="image_3">
+                            </div>
+            
+                            <h2 class="benechat_text">Benechat</h2>
+            
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <!-- RIGHT SLIDE -->
+
+                <div class="right_slide">
+
+                    <!-- BENECHAT -->
+                    <div class="card_item">
+
+                        <div class="benechat__two">
+
+                            <div class="description">
+                                <h2 class="description__title">
+                                    Benechat
+                                </h2>
+                
+                                <p class="description__description">A social platform where users can text chat, send photos and videos and make one-to-one video calls. There is also chat roulette.</p>
+                            </div>
+            
+                            <div class="stack">
+            
+                                <div class="row">
+            
+                                    <div class="item">
+                                        <img src="img/vue.png" alt="">
+                                        <h4>Vue.js</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/django.png" alt="">
+                                        <h4>Django</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/redis.png" alt="">
+                                        <h4>Redis</h4>
+                                    </div>
+                                </div>
+            
+                                <div class="row">
+                                    <div class="item">
+                                        <img src="img/pg.png" alt="">
+                                        <h4>PostgreSQL</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/cf.png" alt="">
+                                        <h4>Celery Framework</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/python.png" alt="">
+                                        <h4>Python</h4>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="btn_section">
+                                <button class="btn_section__button">
+                                    <a>Downloand PDF ortfolio</a>
+                                    <img src="img/daw_white.png" alt="" class="non_visible">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CLIPPER -->
+                    <div class="card_item">
+
+                        <div class="benechat__two">
+
+                            <div class="description">
+                                <h2 class="description__title">
+                                    Clipper
+                                </h2>
+                
+                                <p class="description__description">Streaming platform with online video editing. Allows you to rewind live broadcast, cut clips and edit them: add audio, text, watermarks and other video fragments
+                                </p>
+                            </div>
+            
+                            <div class="stack">
+            
+                                <div class="row">
+                                    <div class="item">
+                                        <img src="img/vue.png" alt="">
+                                        <h4>Vue.js</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/spring.png" alt="">
+                                        <h4>Spring</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/redis.png" alt="">
+                                        <h4>Redis</h4>
+                                    </div>
+                                </div>
+            
+                                <div class="row withTwo">
+                                    <div class="item">
+                                        <img src="img/TS.png" alt="">
+                                        <h4>Typescript</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/Java.png" alt="">
+                                        <h4>Java</h4>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="btn_section">
+                                <button class="btn_section__button">
+                                    <a>Downloand PDF Portfolio</a>
+                                </button>
+                            </div>
+            
+                        </div>
+                        
+                    </div>
+
+                    <!-- VideoTicket -->
+                    <div class="card_item">
+
+                        <div class="benechat__two">
+
+                            <div class="description">
+                                <h2 class="description__title">
+                                    VideoTicket 
+                                </h2>
+                
+                                <p class="description__description">Streaming platform with online video editing. Allows you to rewind live broadcast, cut clips and edit them: add audio, text, watermarks and other video fragments
+                                </p>
+                            </div>
+            
+                            <div class="stack">
+            
+                                <div class="row">
+                                    <div class="item">
+                                        <img src="img/vue.png" alt="">
+                                        <h4>Vue.js</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/spring.png" alt="">
+                                        <h4>Spring</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/redis.png" alt="">
+                                        <h4>Redis</h4>
+                                    </div>
+                                </div>
+            
+                                <div class="row">
+                                    <div class="item">
+                                        <img src="img/pg.png" alt="">
+                                        <h4>PostgreSQL</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/FA.png" alt="">
+                                        <h4>Fasp API</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/nginx.png" alt="">
+                                        <h4>Nginx</h4>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="btn_section">
+                                <button class="btn_section__button">
+                                    <a>Downloand PDF ortfolio</a>
+                                </button>
+                            </div>
+            
+                        </div>
+
+                    </div>
+                    
+                    <!-- Videoconference -->
+                    <div class="card_item">
+                        <div class="benechat__two">
+
+                            <div class="description">
+                                <h2 class="description__title">
+                                    VideoConference 
+                                </h2>
+                
+                                <p class="description__description">A videoconferencing system in which users can communicate with each other using a webcam, microphone and chat.</p>
+                            </div>
+            
+                            <div class="stack">
+            
+                                <div class="row">
+                                    <div class="item">
+                                        <img src="img/vue.png" alt="">
+                                        <h4>Vue.js</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/express.png" alt="">
+                                        <h4>Express.js</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/redis.png" alt="">
+                                        <h4>Redis</h4>
+                                    </div>
+                                </div>
+            
+                                <div class="row withTwo">
+                                    <div class="item">
+                                        <img src="img/node.png" alt="">
+                                        <h4>Node.js</h4>
+                                    </div>
+            
+                                    <div class="item">
+                                        <img src="img/react.png" alt="">
+                                        <h4>React.js</h4>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="btn_section">
+                                <button class="btn_section__button">
+                                    <a>Downloand PDF ortfolio</a>
+                                </button>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON SECTION -->
+
+                <div class="button_section">
+                    <button class="down_button">
+                        Назад
+                    </button>
+                    <button class="up_button">
+                        Вперед
+                    </button>
+                </div>
+            </div>
+        
+        </section>
+
+        <!-- C O N T A C T  -->
+
+        <section class="contact" id="hireUs">
+            <div class="rectangle">
+                <h2 class="rectangle__title">Contact us</h2>
+
+                <form class="form" action="">
+                    <div class="form__info">
+                        <div class="name">
+                            <input type="text" placeholder="[Name]">
+                            <div class="border"></div>
+                        </div>
+                        <div class="email">
+                            <input type="text" placeholder="[E-mail]">
+                            <div class="border"></div>
+                        </div>
+                        <button type="submit" class="button_chat">Let's chat</button>
+                    </div>
+                </form>
+
+                <div class="rectangle__contacts">
+                    <div class="item">
+                        <img src="img/foot_1.png" alt="">
+                        <a href="https://t.me/rtfdeamon">@4keyteam</a>
+                    </div>
+        
+                    <div class="item">
+                        <img src="img/foot_2.png" alt="">
+                        <a href="mailto:4keyteam@gmail.com">4keyteam@gmail.com</a>
+                    </div>
+        
+                    <div class="item">
+                        <img src="img/foot_3.png" alt="">
+                        <a>+7 (934) 55-63-50</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- F O O T E R  -->
+
+        <footer class="footer" id="contacts">
+            <div class="keyboard">
+                <div class="keyboard__keyaboards">
+                    <img src="img/btn_1.png" alt="" class="keyboard__image">
+                    <img src="img/btn_2.png" alt="" class="keyboard__image">
+                    <img src="img/btn_3.png" alt="" class="keyboard__image">
+                    <img src="img/btn_4.png" alt="" class="keyboard__image">
+                </div>
+                <h3 class="keyboard__text">development team</h3>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
