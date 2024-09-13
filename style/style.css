@@ -3,9 +3,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: red;
+}
+
 .boss {
   font-family: "Unbounded", sans-serif;
   color: #F1F1F1;
+  background-color: rgb(73, 77, 90);
   font-size: 20px;
   font-weight: 300;
   line-height: 24.8px;
@@ -274,6 +279,9 @@ html {
   padding: 10px;
   padding-bottom: 88px;
 }
+.boss .slider .info__item {
+  transition: all 1s ease-in-out;
+}
 .boss .slider .info__item h3 {
   font-size: 40px;
   font-weight: 800;
@@ -282,6 +290,10 @@ html {
   margin-top: 5px;
   font-size: 20px;
   font-weight: 300;
+}
+.boss .slider .info__item:hover {
+  color: #F1AD2A;
+  scale: 1.2;
 }
 .boss .swipper {
   scroll-snap-align: start;
@@ -519,6 +531,40 @@ html {
 .boss .contact .rectangle .form__info .email {
   margin-top: 30px;
 }
+.boss .contact .rectangle .form__info .button__section {
+  margin-top: 75px;
+  margin-right: 98px;
+  display: flex;
+  justify-content: flex-end;
+}
+.boss .contact .rectangle .form__info .button__section .button_chat {
+  align-items: center;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(90deg, #F1AD2A 0%, #BA7EE0 100%);
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.boss .contact .rectangle .form__info .button__section .button_chat .contact_btn {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.boss .contact .rectangle .form__info .button__section .button_chat span {
+  font-family: "Unbounded", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.boss .contact .rectangle .form__info .button__section .button_chat img {
+  margin-left: 28px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+}
 .boss .contact .rectangle__contacts {
   margin-top: 53px;
   display: flex;
@@ -694,6 +740,189 @@ html {
     font-size: 18px;
     font-weight: 300;
   }
+  .boss .contact .rectangle {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: #494D5A;
+    width: 760px;
+    padding: 15px;
+    margin-bottom: 81px;
+  }
+  .boss .contact .rectangle__title {
+    margin-top: 100px;
+    font-size: 75px;
+  }
+  .boss .contact .rectangle .form {
+    margin-top: 104px;
+    display: flex;
+    justify-content: center;
+  }
+  .boss .contact .rectangle .form__info {
+    position: relative;
+  }
+  .boss .contact .rectangle .form__info input {
+    margin: 0px;
+  }
+  .boss .contact .rectangle .form__info .email {
+    margin-top: 30px;
+    padding-bottom: 40px;
+  }
+  .boss .contact .rectangle .form__info .button_chat {
+    align-items: center;
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(90deg, #F1AD2A 0%, #BA7EE0 100%);
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .boss .contact .rectangle .form__info .button_chat .contact_btn {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .boss .contact .rectangle .form__info .button_chat span {
+    font-family: "Unbounded", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+  }
+  .boss .contact .rectangle .form__info .button_chat img {
+    margin-left: 28px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+  }
+  .boss .contact .rectangle__contacts {
+    margin-top: 57px;
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 56px;
+  }
+  .boss .contact .rectangle__contacts .item {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  .boss .contact .rectangle__contacts .item a {
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+  .boss .contact .rectangle__contacts .item:hover {
+    font-weight: 450;
+    scale: 1.2;
+  }
+}
+@media (max-width: 1250px) {
+  .boss .swipper__container .left_slide .card_item {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .boss .swipper__container .left_slide .card_item .images_section_benechat {
+    margin: 0 auto;
+    width: 550px;
+    height: 473px;
+  }
+  .boss .swipper__container .left_slide .card_item .images_section_benechat .image_1 {
+    width: 354.9px;
+    height: 262.86px;
+  }
+  .boss .swipper__container .left_slide .card_item .images_section_benechat .image_2 {
+    top: 293.8px;
+    left: 195px;
+    width: 354.9px;
+    height: 262.86px;
+    z-index: 200;
+  }
+  .boss .swipper__container .left_slide .card_item .images_section_benechat .image_3 {
+    top: 135.2px;
+    left: 78px;
+    z-index: 10;
+    width: 390px;
+    height: 262.86px;
+  }
+  .boss .swipper__container .left_slide .card_item .benechat_text {
+    margin-top: 60px;
+  }
+  .boss .swipper__container .left_slide .card_item .images_section__tickets_two {
+    margin: 0 auto;
+    width: 560px;
+    height: 473px;
+  }
+  .boss .swipper__container .left_slide .card_item .images_section__tickets_two img {
+    width: 408px;
+    height: 285px;
+  }
+  .boss .swipper__container .left_slide .card_item .images_section__tickets_two .image_1 {
+    top: 116px;
+    right: 0px;
+    z-index: 10;
+  }
+  .boss .swipper__container .left_slide .card_item .images_section_clipper img {
+    width: 566px;
+    height: 281px;
+  }
+  .boss .swipper__container .left_slide .card_item h2 {
+    margin-top: 109px;
+    font-size: 53px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .description {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .description__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .description .videoticket {
+    font-size: 30px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .description__description {
+    padding: 0px 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .stack {
+    margin: 50px auto 0px;
+    padding: 21px 20px;
+    max-width: 350px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .stack .row .item {
+    padding: 4px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .stack .row .item h4 {
+    font-size: 12.2px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .stack .withTwo {
+    gap: 40px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .btn_section__button {
+    padding: 18px 27px;
+  }
+  .boss .swipper__container .right_slide > div {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(136, 141, 158, 0.71);
+  }
+  .boss .swipper__container .button_section button {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    z-index: 100;
+  }
+}
+@media (max-width: 1000px) {
   .boss .swipper__container .left_slide .card_item {
     flex-direction: column;
     justify-content: center;
@@ -826,62 +1055,193 @@ html {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  .boss .contact .rectangle {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 60px;
-    background-color: #494D5A;
-    width: 760px;
-    padding: 15px;
-    margin-bottom: 81px;
+}
+@media (max-width: 880px) {
+  .boss .slider .first .blocks .row .block {
+    width: 150px;
+    height: 150px;
   }
-  .boss .contact .rectangle__title {
-    margin-top: 100px;
-    font-size: 75px;
+  .boss .slider .first .blocks .row .block p {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
   }
-  .boss .contact .rectangle .form {
-    margin-top: 104px;
+  .boss .slider .first .blocks .row .block img {
+    width: 100px;
+    left: 7px;
+  }
+  .boss .slider .first .blocks .row .bottom {
+    width: 300px;
+  }
+  .boss .slider .first .right {
+    width: 100%;
+  }
+  .boss .slider .first .right .result {
+    height: 300px;
+  }
+  .boss .slider .first .right .result__info .text_section {
+    padding-top: 15px;
+    margin-left: 35px;
+  }
+  .boss .slider .first .right .result__info .text_section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 39.68px;
+  }
+  .boss .slider .first .right .result__info .text_section p {
+    margin-top: 3px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .boss .slider .first .right .result__info .image_section {
+    margin-top: 12px;
+  }
+  .boss .slider .first .right .result__info .image_section__row {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .boss .slider .first .right .result__info .image_section__row .item p {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+  .boss .slider .first .right .result__info .image_section__row .item img {
+    width: 53px;
+  }
+  .boss .slider .first .right .result__info .image_section .help {
+    margin-top: 10px;
+  }
+  .boss .slider .first .right .result__info .pm {
     display: flex;
     justify-content: center;
+    margin: 0;
+    margin-top: 10px;
   }
-  .boss .contact .rectangle .form__info {
-    position: relative;
+  .boss .slider .first .right .result__info .pm img {
+    width: 260px;
+  }
+  .boss .slider .first .right .result__info .SA {
+    margin-top: 40px;
+  }
+  .boss .slider .first .right .result .active {
+    opacity: 1;
+  }
+  .boss .slider .first .right .result_chat {
+    height: 150px;
+  }
+  .boss .slider .first .right .result_chat p {
+    margin-top: 15px;
+    margin-left: 23px;
+    padding-right: 5px;
+    font-weight: 300;
+    font-size: 11px;
+  }
+  .boss .slider .first .right .result_chat .button_section {
+    margin-top: -5px;
+    margin-left: 13px;
+    padding: 0px 8px 0px 13px;
+  }
+  .boss .slider .first .right .result_chat .button_section button {
+    padding: 5px 14px;
+  }
+  .boss .slider .first .right .result_chat .button_section button .contact_btn {
+    padding: 10px;
+  }
+  .boss .slider .first .right .result_chat .button_section button span {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .boss .slider .first .right .result_chat .button_section button img {
+    margin-left: 10px;
+    padding: 4px;
+  }
+  .boss .slider .first .right .result_chat .button_section .rotating_star {
+    width: 50px;
+  }
+  .boss .slider .info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+  .boss .slider .info__item h3 {
+    font-size: 26.25px;
+    font-weight: 800;
+  }
+  .boss .slider .info__item p {
+    margin-top: 0px;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  .boss .contact .rectangle {
+    margin-top: 60px;
+    width: 630px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .boss .contact .rectangle__title {
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  .boss .contact .rectangle .form {
+    margin-top: 50px;
+    justify-content: flex-start;
+    padding-left: 30px;
   }
   .boss .contact .rectangle .form__info input {
-    margin: 0px;
+    margin-left: 5px;
+    width: 400px;
+    height: 39px;
+  }
+  .boss .contact .rectangle .form__info input::-moz-placeholder {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .boss .contact .rectangle .form__info input::placeholder {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .boss .contact .rectangle .form__info .border {
+    height: 1.5px;
+    width: 420px;
+    margin-top: 0px;
   }
   .boss .contact .rectangle .form__info .email {
     margin-top: 30px;
-    padding-bottom: 40px;
   }
   .boss .contact .rectangle .form__info .button_chat {
-    position: absolute;
-    bottom: -20px;
-    right: 20px;
+    right: -50px;
   }
   .boss .contact .rectangle__contacts {
     margin-top: 57px;
     display: flex;
     justify-content: center;
-    -moz-column-gap: 35px;
-         column-gap: 35px;
-    font-size: 15px;
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+    font-size: 12px;
     font-weight: 400;
-    margin-bottom: 56px;
+    margin-bottom: 46px;
   }
   .boss .contact .rectangle__contacts .item {
     display: flex;
     align-items: center;
-    -moz-column-gap: 8px;
-         column-gap: 8px;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
     transition: all 0.5s ease-in-out;
   }
   .boss .contact .rectangle__contacts .item a {
     color: white;
     transition: all 0.5s ease-in-out;
   }
+  .boss .contact .rectangle__contacts .item a:hover {
+    font-weight: 450;
+    scale: 1.1;
+  }
+  .boss .contact .rectangle__contacts .item img {
+    width: 23px;
+  }
   .boss .contact .rectangle__contacts .item:hover {
     font-weight: 450;
-    scale: 1.2;
+    scale: 1.1;
   }
 }/*# sourceMappingURL=style.css.map */

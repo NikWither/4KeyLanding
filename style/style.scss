@@ -3,12 +3,13 @@ html {
 }
 
 body {
-
+    background-color: red;
 }
 // главный контейнер
 .boss {
     font-family: "Unbounded", sans-serif;
     color: #F1F1F1;
+    background-color: rgba(73, 77, 90, 1);
     // background-color: #BA7EE0;
 
     font-size: 20px;
@@ -46,8 +47,6 @@ body {
                     padding: 100px 0px;
                 }
 
-                &__text {
-                }
             }
 
             .share {
@@ -125,10 +124,6 @@ body {
             justify-content: space-between;
             align-items: center;
             padding: 14px 73px;
-
-            &__logo {
-
-            }
 
             &__nav {
 
@@ -394,6 +389,13 @@ body {
                     font-size: 20px;
                     font-weight: 300;
                 }
+
+                transition: all 1s ease-in-out;
+            }
+
+            &__item:hover {
+                color: #F1AD2A;
+                scale: 1.2;
             }
         }
     }
@@ -415,6 +417,7 @@ body {
                 top: 0;
                 left: 0;
                 transition: transform 1.9s ease;
+            
 
                 .card_item {
                     // background-color: #7FACE1;
@@ -626,9 +629,6 @@ body {
                             background-color: #494D5A;
                             border-radius: 30px;
                         }
-        
-                        img {
-                        }
                     }
                 }
             }
@@ -695,7 +695,10 @@ body {
                 display: flex;
                 justify-content: flex-end;
 
+
                 &__info {
+
+                    
                     input {
                         margin-left: 22px;
                         width: 670px;
@@ -720,6 +723,50 @@ body {
                     .email {
                         margin-top: 30px;
                     }
+
+                    .button__section {
+
+                        margin-top: 75px;
+                        margin-right: 98px;
+
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .button_chat {
+                            align-items: center;
+                            display: inline-flex;
+                            align-items: center;
+                            background: linear-gradient(90deg, #F1AD2A 0%, #BA7EE0 100%);
+                            border-radius: 50px;
+                            padding: 10px 20px;
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+    
+                            .contact_btn {
+                                padding: 10px;
+                                border-radius: 50%;
+                                background-color: white;
+                            }
+    
+                            span {
+                                font-family: 'Unbounded', sans-serif;
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: white;
+                            }
+    
+                            img {
+                                margin-left: 28px;
+                                padding: 10px;
+                                border-radius: 50%;
+                                background-color: white;
+                                display: inline-block;
+                            }
+    
+                            
+                        }
+                    }
+
                 }
             }
 
@@ -788,12 +835,11 @@ body {
         }
     }
 
-    // ноутбуки или древние компы 870-1250
+    // ноутбуки или древние компы + большие планшеты 880-1250
     @media (max-width: 1250px) {
         
         .slider {
             .first {
-    
                 .blocks {
                     .row {
                         .block {
@@ -976,6 +1022,285 @@ body {
             }
         }
 
+        .contact {
+    
+            .rectangle {
+
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 60px;
+                background-color: #494D5A;
+                width: 760px;
+                padding: 15px;
+                margin-bottom: 81px;
+    
+                &__title {
+                    margin-top: 100px;
+    
+                    font-size: 75px;
+                }
+    
+                .form {
+                    
+                    
+                    margin-top: 104px;
+
+                    display: flex;
+                    justify-content: center;
+                    &__info {
+
+                        position: relative;
+
+                        input {
+                            margin: 0px;
+                        }
+                        .email {
+                            margin-top: 30px;
+                            padding-bottom: 40px;
+                        }
+
+                        .button_chat {
+                            align-items: center;
+                            display: inline-flex;
+                            align-items: center;
+                            background: linear-gradient(90deg, #F1AD2A 0%, #BA7EE0 100%);
+                            border-radius: 50px;
+                            padding: 10px 20px;
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+    
+                            .contact_btn {
+                                padding: 10px;
+                                border-radius: 50%;
+                                background-color: white;
+                            }
+    
+                            span {
+                                font-family: 'Unbounded', sans-serif;
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: white;
+                            }
+    
+                            img {
+                                margin-left: 28px;
+                                padding: 10px;
+                                border-radius: 50%;
+                                background-color: white;
+                                display: inline-block;
+                            }
+    
+                            
+                        }
+                    }
+                }
+    
+                &__contacts {
+                    margin-top: 57px;
+    
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 35px;
+    
+                    font-size: 15px;
+                    font-weight: 400;
+                    
+                    
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 8px;
+                        transition: all 0.5s ease-in-out;
+    
+                        a {
+                            color: white;
+    
+                            transition: all 0.5s ease-in-out;
+                        }
+    
+                        // a:hover {
+                        //     font-weight: 450;
+                        //     scale: 1.2
+                        // }
+                    }
+    
+                    .item:hover {
+                        font-weight: 450;
+                        scale: 1.2;
+                    }
+    
+                    margin-bottom: 56px;
+                }
+            }
+        }
+    }
+    // swipper
+    @media (max-width: 1250px) {
+        .swipper {
+            
+            &__container {
+    
+                .left_slide {
+    
+                    .card_item {
+                        // background-color: #7FACE1;
+    
+                        // для benechat
+
+                        flex-direction: column;
+                        justify-content: center;
+            
+                        .images_section_benechat {
+                            margin: 0 auto;
+            
+                            width: 550px;
+                            height: 473px;
+
+                            .image_1 {
+                                width: 273 * 1.3px;
+                                height: 202.2*1.3px;
+                            }
+        
+            
+                            .image_2 {
+                                top: 226*1.3px;
+                                left: 150*1.3px;
+                                width: 273*1.3px;
+                                height: 202.2*1.3px;
+                                z-index: 200;
+                            }
+            
+                            .image_3 {
+                                top: 104*1.3px;
+                                left: 60*1.3px;
+                                z-index: 10;
+                                width: 300*1.3px;
+                                height: 202.2*1.3px;
+                            }
+            
+            
+                        }
+            
+                        .benechat_text {
+                            margin-top: 60px;
+                        }
+                
+                        .images_section__tickets_two {
+                            margin: 0 auto;
+            
+                            width: 560px;
+                            height: 473px;
+            
+                            img {
+                                width: 408px;
+                                height: 285px;
+                            }
+            
+                            .image_1 {
+                                top: 116px;
+                                right: 0px;
+                                z-index: 10;
+                            }
+                        }
+
+                        .images_section_clipper {
+                            img {
+                                width: 566px;
+                                height: 281px;
+                            }
+                        }
+            
+                        h2 {
+                            margin-top: 109px;
+                            font-size: 53px;
+                        }
+                    }
+                }
+    
+                .right_slide {
+    
+                    .card_item {
+
+
+                        .benechat__two {    
+        
+                            .description {
+
+                                margin: 0;
+                
+                                flex-direction: column;
+                                justify-content: center;
+                    
+                                &__title {
+                                    text-align: center;
+                                    font-size: 30px;
+                                    font-weight: 600;
+                                }
+
+                                .videoticket {
+                                    font-size: 30px;
+                                }
+                    
+                                &__description {
+                                    padding: 0px 20px;
+                                    margin-top: 30px;
+                                    text-align: center;
+                                }
+                            }
+                    
+                    
+                            .stack {
+                    
+                                margin: 50px auto 0px;
+                                padding: 21px 20px;
+                                max-width: 350px;
+                    
+                                .row {
+                                    .item {
+                                        padding: 4px;
+                    
+                                        h4 {
+                                            font-size: 12.2px;
+                                        }
+                                    }
+                                }
+                    
+                                .withTwo {
+                                    gap: 40px;
+                                }
+                            }
+                    
+                            .btn_section {
+                    
+                                &__button {
+                    
+                                    padding: 18px 27px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .right_slide > div {
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(136, 141, 158, 0.71);
+                }
+    
+                .button_section {
+    
+                    button {
+                        position: absolute;
+                        left: 60%;
+                        top: 50%;
+                        z-index: 100;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
         .swipper {
             
             &__container {
@@ -1057,9 +1382,6 @@ body {
                     }
                 }
     
-                .left_slide > div {
-                }
-    
                 .right_slide {
     
                     .card_item {
@@ -1139,8 +1461,7 @@ body {
                                 border-radius: 30px;
                             }
             
-                            img {
-                            }
+
                         }
                     }
 
@@ -1175,58 +1496,428 @@ body {
                 }
             }
         }
+    }
+
+
+    // 700 - 880 планшеты большие телефоны
+    @media (max-width: 880px) {
+        .slider {
+            .first {
+    
+                .blocks {
+                    .row {
+                        .block {
+                            width: 150px;
+                            height: 150px;
+                            p {
+                                margin-left: 10px;
+                                padding: 5px;
+                                font-size: 16px;
+                            }
+    
+                            img {
+                                width: 100px;
+                                left: 7px;
+                            }
+                        }
+    
+                        // for manager
+                        .bottom {
+                            width: 300px;
+                        }
+                    }
+                }
+    
+                .right {
+    
+                    width: 100%;
+    
+                    .result {
+                        height: 300px;
+                        &__info {
+                            .text_section {
+                                padding-top: 15px;
+                                margin-left: 35px;
+    
+                                h2 {
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    line-height: 39.68px;
+                                }
+                
+                                p {
+                                    margin-top: 3px;
+    
+                                    font-weight: 400;
+                                    font-size: 13px;
+                                }
+                            }                    
+    
+                            .image_section {
+    
+                                margin-top: 12px;
+    
+                                &__row {
+                                    column-gap: 20px;
+    
+                                    .item {
+                                        
+                                        p {
+                                            margin-top: 4px;
+    
+                                            font-size: 12px;
+                                        }
+
+                                        img {
+                                            width: 53px;
+                                        }
+                                    }
+                                }
+    
+                                .help {
+                                    margin-top: 10px;
+                                }
+                            }
+    
+                            // for PM
+    
+                            .pm {
+                                display: flex;
+                                justify-content: center;
+                                margin: 0;
+                                margin-top: 10px;
+
+                                img {
+                                    width: 260px;
+
+                                }
+                            }
+    
+                            // for System Analys
+    
+                            .SA {
+                                margin-top: 40px;
+                            }
+                        }
+    
+                        .active {
+                            opacity: 1;
+                        }
+                    }
+    
+                    .result_chat {
+    
+                        height: 150px;
+    
+                        p {
+                            margin-top: 15px;
+                            margin-left: 23px;
+                            padding-right: 5px;
+    
+                            font-weight: 300;
+                            font-size: 11px;
+                        }
+    
+                        .button_section {
+    
+                            margin-top: -5px;
+                            margin-left: 13px;
+    
+                            padding: 0px 8px 0px 13px;
+    
+                            button {
+                                padding: 5px 14px;                                
+    
+                                .contact_btn {
+                                    padding: 10px;
+                                }
+    
+                                span {
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                }
+    
+                                img {
+                                    margin-left: 10px;
+                                    padding: 4px;
+                                }
+                            }
+
+                            .rotating_star {
+                                width: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .info {
+    
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                padding-bottom: 50px;
+    
+                &__item {
+                    
+                    h3 {
+                        font-size: 26.25px;
+                        font-weight: 800;
+                    }
+    
+                    p {
+                        margin-top: 0px;
+                        font-size: 13.5px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+        // .swipper {
+            
+        //     &__container {
+    
+        //         .left_slide {
+    
+        //             .card_item {
+        //                 // background-color: #7FACE1;
+    
+        //                 // для benechat
+
+        //                 flex-direction: column;
+        //                 justify-content: center;
+            
+        //                 .images_section_benechat {
+        //                     margin: 0 auto;
+            
+        //                     width: 450px;
+        //                     height: 473px;
+
+        //                     .image_1 {
+        //                         width: 273px;
+        //                         height: 202.2px;
+        //                     }
+        
+            
+        //                     .image_2 {
+        //                         top: 226px;
+        //                         left: 150px;
+        //                         width: 273px;
+        //                         height: 202.2px;
+        //                         z-index: 200;
+        //                     }
+            
+        //                     .image_3 {
+        //                         top: 104px;
+        //                         left: 60px;
+        //                         z-index: 10;
+        //                         width: 300px;
+        //                         height: 202.2px;
+        //                     }
+            
+            
+        //                 }
+            
+        //                 .benechat_text {
+        //                     margin-top: 60px;
+        //                 }
+                
+        //                 .images_section__tickets_two {
+        //                     margin: 0 auto;
+            
+        //                     width: 560px;
+        //                     height: 473px;
+            
+        //                     img {
+        //                         width: 408px;
+        //                         height: 285px;
+        //                     }
+            
+        //                     .image_1 {
+        //                         top: 116px;
+        //                         right: 0px;
+        //                         z-index: 10;
+        //                     }
+        //                 }
+
+        //                 .images_section_clipper {
+        //                     img {
+        //                         width: 566px;
+        //                         height: 281px;
+        //                     }
+        //                 }
+            
+        //                 h2 {
+        //                     margin-top: 109px;
+        //                     font-size: 53px;
+        //                 }
+        //             }
+        //         }
+    
+        //         .left_slide > div {
+        //         }
+    
+        //         .right_slide {
+    
+        //             .card_item {
+
+        //                 flex-direction: column;
+        //                 justify-content: center;
+    
+        //                 .description {
+            
+        //                     margin: 0 auto;
+                
+        //                     &__title {
+        //                         color: #D9E6F5;
+        //                         font-size: 30px;   
+        //                     }
+
+        //                     .videoticket {
+        //                         font-size: 23px;
+        //                     }
+                
+        //                     &__description {
+        //                         margin-top: 30px;
+        //                     }
+        //                 }
+                
+                
+        //                 .stack {
+        //                     display: flex;
+        //                     justify-content: center;
+        //                     flex-direction: column;
+                
+        //                     margin: 102px auto 0px;
+        //                     padding: 26px 25px;
+        //                     background-color: #FEFEFE29;
+        //                     border-radius: 27px;
+                
+        //                     max-width: 410px;
+                
+        //                     .row {
+                
+        //                         display: flex;
+        //                         justify-content: space-around;
+        //                         align-items: flex-end;
+                
+        //                         .item {
+        //                             display: flex;
+        //                             flex-direction: column;
+        //                             align-items: center;
+        //                             padding: 6px;
+                
+        //                             h4 {
+        //                                 font-size: 13px;
+        //                                 color: #464D63;
+        //                                 text-align: center;
+        //                                 font-weight: 600;
+                
+        //                                 font-family: "Kadwa", serif;
+        //                             }
+        //                         }
+        //                     }
+                
+        //                     .withTwo {
+        //                         justify-content: center;
+        //                         gap: 50px;
+        //                     }
+        //                 }
+                
+        //                 .btn_section {
+        //                     margin-top: 40px;
+        //                     display: flex;
+        //                     justify-content: center;
+                
+        //                     &__button {
+                
+        //                         padding: 20px 30px;
+        //                         background-color: #494D5A;
+        //                         border-radius: 30px;
+        //                     }
+            
+        //                     img {
+        //                     }
+        //                 }
+        //             }
+
+        //         }
+    
+        //         .right_slide > div {
+        //             height: 100%;
+        //             width: 100%;
+        //             background-color: rgb(96, 97, 97);
+        //         }
+    
+        //         .button_section {
+    
+        //             button {
+        //                 position: absolute;
+        //                 left: 60%;
+        //                 top: 50%;
+        //                 z-index: 100;
+        //             }
+    
+        //             .down_button {
+        //                 transform: translateX(-100%);
+        //                 border-top-left-radius: 5px;
+        //                 border-bottom-left-radius: 5px;
+        //             }
+    
+        //             .up_button {
+        //                 transform: translateY(-100%);
+        //                 border-top-right-radius: 5px;
+        //                 border-bottom-right-radius: 5px;
+        //             }
+        //         }
+        //     }
+        // }
 
         .contact {
     
             .rectangle {
-
-                flex-direction: column;
-                justify-content: center;
                 margin-top: 60px;
-                background-color: #494D5A;
-                width: 760px;
-                padding: 15px;
-                margin-bottom: 81px;
+                width: 630px;
+                padding: 10px;
+                margin-bottom: 50px;
     
                 &__title {
-                    margin-top: 100px;
+                    margin-top: 50px;
     
-                    font-size: 75px;
+                    font-size: 50px;
                 }
     
                 .form {
-                    
-                    
-                    margin-top: 104px;
-
-                    display: flex;
-                    justify-content: center;
+                    margin-top: 50px;
+                    justify-content: flex-start;
+                    padding-left: 30px;
+    
                     &__info {
-
-                        position: relative;
-
-                        .name {
-                        }
-
                         input {
-                            margin: 0px;
+                            margin-left: 5px;
+                            width: 400px;
+                            height: 39px;
                         }
     
                         input::placeholder {
+                            font-size: 20px;
+                            font-weight: 200;
                         }
     
                         .border {
+                            height: 1.5px;
+                            width: 420px;
+                            margin-top: 0px;
                         }
     
                         .email {
                             margin-top: 30px;
-                            padding-bottom: 40px;
                         }
 
                         .button_chat {
-                            position: absolute;
-                            bottom: -20px;
-                            right: 20px;
+                            right: -50px;
                         }
                     }
                 }
@@ -1236,16 +1927,16 @@ body {
     
                     display: flex;
                     justify-content: center;
-                    column-gap: 35px;
+                    column-gap: 28px;
     
-                    font-size: 15px;
+                    font-size: 12px;
                     font-weight: 400;
                     
                     
                     .item {
                         display: flex;
                         align-items: center;
-                        column-gap: 8px;
+                        column-gap: 4px;
                         transition: all 0.5s ease-in-out;
     
                         a {
@@ -1254,24 +1945,24 @@ body {
                             transition: all 0.5s ease-in-out;
                         }
     
-                        // a:hover {
-                        //     font-weight: 450;
-                        //     scale: 1.2
-                        // }
+                        a:hover {
+                            font-weight: 450;
+                            scale: 1.1
+                        }
+
+                        img {
+                            width: 23px;
+                        }
                     }
     
                     .item:hover {
                         font-weight: 450;
-                        scale: 1.2;
+                        scale: 1.1;
                     }
     
-                    margin-bottom: 56px;
+                    margin-bottom: 46px;
                 }
             }
         }
     }
-
-    // планшеты 
-
-    // телефоны 
 }
