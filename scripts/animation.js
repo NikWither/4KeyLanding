@@ -2,21 +2,18 @@
 
 infoElements = document.querySelectorAll(".info__item");
 
-infoElements.forEach((element) => {
-    highlightText(element);
-})
+const highLights = gsap.timeline({ repeat: -1 });
 
-function highlightText()
-{
-    gsap.timeline().to()
-}
-
-// gsap.to(star, {
-//     rotation: 360,    // Поворачиваем на 360 градусов
-//     duration: 10,      // Время анимации 5 секунд
-//     repeat: -1,       // Повторение бесконечно
-//     ease: "linear"    // Равномерное вращение
-// });
+// Анимация: увеличение каждого элемента и возврат в исходное состояние
+highLights.to(infoElements, {
+    scale: 1.5,
+    duration: 1,
+    stagger: {
+        each: 1,  // Каждый элемент начнет анимацию через 0.5 секунд
+        repeat: 1,  // Повтор для каждого элемента (увеличение и возврат)
+        yoyo: true  // Анимация будет возвращаться в исходное состояние
+    }
+});
 
 
 // движение круга

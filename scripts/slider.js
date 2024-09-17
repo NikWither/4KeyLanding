@@ -34,4 +34,4 @@ const changeSlide = (direction) => {
 
 // setInterval(() => {
 //     changeSlide('up');
-// }, 10000); // 10 sec
+// }, 5000); // 3 sec

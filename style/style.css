@@ -4,13 +4,12 @@ html {
 }
 
 body {
-  background-color: red;
+  background-color: rgb(73, 77, 90);
 }
 
 .boss {
   font-family: "Unbounded", sans-serif;
   color: #F1F1F1;
-  background-color: rgb(73, 77, 90);
   font-size: 20px;
   font-weight: 300;
   line-height: 24.8px;
@@ -314,6 +313,7 @@ body {
 }
 .boss .swipper__container .left_slide .card_item {
   position: relative;
+  background-image: url("/img/background.png");
 }
 .boss .swipper__container .left_slide .card_item .images_section_benechat {
   margin-left: 66px;
@@ -362,29 +362,25 @@ body {
   font-weight: 600;
   color: #F1F1F1;
 }
-.boss .swipper__container .left_slide .card_item .figute_1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 400px;
-  background-color: #BA7EE0;
-  opacity: 0.2;
-  z-index: -5;
-}
-.boss .swipper__container .left_slide .card_item::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
+.boss .swipper__container .left_slide .card_item .shape_5 {
+  background: linear-gradient(45deg, rgba(233, 208, 70, 0.7), rgba(186, 126, 224, 0.8), rgba(127, 172, 225, 0.9));
+  width: 100vh;
   height: 100vh;
-  background-image: url("/4KeyLanding/landing/img/background.png"); /* Путь к вашему изображению */
-  background-size: auto; /* Масштабируем изображение по всей секции */
-  background-position: center; /* Центрируем изображение */
-  opacity: 0.5; /* Применяем прозрачность */
-  z-index: -1; /* Чтобы псевдоэлемент был за контентом */
-  pointer-events: none;
+  opacity: 1;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.boss .swipper__container .left_slide .card_item .shape_6 {
+  background: linear-gradient(-45deg, rgba(127, 172, 225, 0.9), rgba(186, 126, 224, 0.8), rgba(233, 208, 70, 0.7));
+  width: 100vh;
+  height: 100vh;
+  opacity: 1;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 .boss .swipper__container .left_slide > div {
   height: 100%;
@@ -473,21 +469,60 @@ body {
   z-index: 100;
 }
 .boss .swipper__container .button_section .down_button {
-  transform: translateX(-100%);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  transform: translateX(-50%);
+  width: 55px;
+}
+.boss .swipper__container .button_section .down_button img {
+  rotate: 90deg;
+  border-radius: 50%;
+  display: inline-block;
 }
 .boss .swipper__container .button_section .up_button {
-  transform: translateY(-100%);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  transform: translateX(-50%);
+  width: 55px;
+}
+.boss .swipper__container .button_section .up_button img {
+  rotate: -90deg;
+  border-radius: 50%;
+  display: inline-block;
+}
+.boss .swipper__container .button_section .up {
+  top: 43%;
+}
+.boss .swipper__container .button_section .down {
+  bottom: 43%;
+}
+.boss .swipper__container .wrapper__dotc {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+.boss .swipper__container .wrapper__dotc .dotc {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+}
+.boss .swipper__container .wrapper__dotc .dotc .dot {
+  background-color: rgb(217, 217, 217);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+}
+.boss .swipper__container .wrapper__dotc .dotc .active {
+  background-color: rgb(73, 77, 90);
+  width: 19px;
+  height: 19px;
 }
 .boss .contact {
   display: flex;
   justify-content: center;
-  background-color: #7FACE1;
+  background-color: #494D5A;
 }
 .boss .contact .rectangle {
+  border: 2px solid white;
+  border-radius: 25px;
   margin-top: 60px;
   background-color: #494D5A;
   width: 1200px;
@@ -766,42 +801,32 @@ body {
   }
   .boss .contact .rectangle .form__info .email {
     margin-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
-  .boss .contact .rectangle .form__info .button_chat {
-    align-items: center;
-    display: inline-flex;
-    align-items: center;
-    background: linear-gradient(90deg, #F1AD2A 0%, #BA7EE0 100%);
+  .boss .contact .rectangle .form__info .button__section {
+    margin-top: 35px;
+    justify-content: flex-end;
+  }
+  .boss .contact .rectangle .form__info .button__section .button_chat {
     border-radius: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    padding: 7.5px 15px;
   }
-  .boss .contact .rectangle .form__info .button_chat .contact_btn {
-    padding: 10px;
-    border-radius: 50%;
-    background-color: white;
+  .boss .contact .rectangle .form__info .button__section .button_chat .contact_btn {
+    padding: 12px;
   }
-  .boss .contact .rectangle .form__info .button_chat span {
-    font-family: "Unbounded", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
+  .boss .contact .rectangle .form__info .button__section .button_chat span {
+    font-size: 18px;
   }
-  .boss .contact .rectangle .form__info .button_chat img {
-    margin-left: 28px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: white;
-    display: inline-block;
+  .boss .contact .rectangle .form__info .button__section .button_chat img {
+    margin-left: 12px;
+    padding: 5px;
   }
   .boss .contact .rectangle__contacts {
     margin-top: 57px;
     display: flex;
     justify-content: center;
-    -moz-column-gap: 35px;
-         column-gap: 35px;
+    -moz-column-gap: 65px;
+         column-gap: 65px;
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 56px;
@@ -1209,15 +1234,33 @@ body {
   .boss .contact .rectangle .form__info .email {
     margin-top: 30px;
   }
-  .boss .contact .rectangle .form__info .button_chat {
-    right: -50px;
+  .boss .contact .rectangle .form__info .button__section {
+    margin-top: 0px;
+    margin-left: 270px;
+    justify-content: flex-end;
+  }
+  .boss .contact .rectangle .form__info .button__section .button_chat {
+    border-radius: 50px;
+    padding: 5px 10px;
+  }
+  .boss .contact .rectangle .form__info .button__section .button_chat .contact_btn {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .boss .contact .rectangle .form__info .button__section .button_chat span {
+    font-size: 15px;
+  }
+  .boss .contact .rectangle .form__info .button__section .button_chat img {
+    margin-left: 10px;
+    padding: 5px;
   }
   .boss .contact .rectangle__contacts {
     margin-top: 57px;
     display: flex;
     justify-content: center;
-    -moz-column-gap: 28px;
-         column-gap: 28px;
+    -moz-column-gap: 45px;
+         column-gap: 45px;
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 46px;
