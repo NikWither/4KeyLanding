@@ -775,6 +775,104 @@ body {
     font-size: 18px;
     font-weight: 300;
   }
+  .boss .swipper__container .left_slide .benechat__one .card_item {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .images_section_benechat {
+    margin: 0 auto;
+    width: 550px;
+    height: 523px;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .images_section_benechat .image_1 {
+    width: 327.6px;
+    height: 242.64px;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .images_section_benechat .image_2 {
+    top: 271.2px;
+    left: 180px;
+    width: 327.6px;
+    height: 242.64px;
+    z-index: 200;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .images_section_benechat .image_3 {
+    top: 124.8px;
+    left: 72px;
+    z-index: 10;
+    width: 360px;
+    height: 242.64px;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .benechat_text {
+    margin-top: 60px;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .images_section__tickets_two {
+    margin: 0 auto;
+    width: 560px;
+    height: 473px;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .images_section__tickets_two img {
+    width: 408px;
+    height: 285px;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .images_section__tickets_two .image_1 {
+    top: 116px;
+    right: 0px;
+    z-index: 10;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item .images_section_clipper img {
+    width: 566px;
+    height: 281px;
+  }
+  .boss .swipper__container .left_slide .benechat__one .card_item h2 {
+    margin-top: 30px;
+    font-size: 53px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .description {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .description__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .description .videoticket {
+    font-size: 30px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .description__description {
+    padding: 0px 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .stack {
+    margin: 50px auto 0px;
+    padding: 21px 20px;
+    max-width: 350px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .stack .row .item {
+    padding: 4px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .stack .row .item h4 {
+    font-size: 12.2px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .stack .withTwo {
+    gap: 40px;
+  }
+  .boss .swipper__container .right_slide .card_item .benechat__two .btn_section__button {
+    padding: 18px 27px;
+  }
+  .boss .swipper__container .right_slide > div {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(136, 141, 158, 0.71);
+  }
+  .boss .swipper__container .button_section button {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    z-index: 100;
+  }
   .boss .contact .rectangle {
     flex-direction: column;
     justify-content: center;
@@ -845,106 +943,6 @@ body {
   .boss .contact .rectangle__contacts .item:hover {
     font-weight: 450;
     scale: 1.2;
-  }
-}
-@media (max-width: 1250px) {
-  .boss .swipper__container .left_slide .card_item {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .boss .swipper__container .left_slide .card_item .images_section_benechat {
-    margin: 0 auto;
-    width: 550px;
-    height: 473px;
-  }
-  .boss .swipper__container .left_slide .card_item .images_section_benechat .image_1 {
-    width: 354.9px;
-    height: 262.86px;
-  }
-  .boss .swipper__container .left_slide .card_item .images_section_benechat .image_2 {
-    top: 293.8px;
-    left: 195px;
-    width: 354.9px;
-    height: 262.86px;
-    z-index: 200;
-  }
-  .boss .swipper__container .left_slide .card_item .images_section_benechat .image_3 {
-    top: 135.2px;
-    left: 78px;
-    z-index: 10;
-    width: 390px;
-    height: 262.86px;
-  }
-  .boss .swipper__container .left_slide .card_item .benechat_text {
-    margin-top: 60px;
-  }
-  .boss .swipper__container .left_slide .card_item .images_section__tickets_two {
-    margin: 0 auto;
-    width: 560px;
-    height: 473px;
-  }
-  .boss .swipper__container .left_slide .card_item .images_section__tickets_two img {
-    width: 408px;
-    height: 285px;
-  }
-  .boss .swipper__container .left_slide .card_item .images_section__tickets_two .image_1 {
-    top: 116px;
-    right: 0px;
-    z-index: 10;
-  }
-  .boss .swipper__container .left_slide .card_item .images_section_clipper img {
-    width: 566px;
-    height: 281px;
-  }
-  .boss .swipper__container .left_slide .card_item h2 {
-    margin-top: 109px;
-    font-size: 53px;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .description {
-    margin: 0;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .description__title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .description .videoticket {
-    font-size: 30px;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .description__description {
-    padding: 0px 20px;
-    margin-top: 30px;
-    text-align: center;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .stack {
-    margin: 50px auto 0px;
-    padding: 21px 20px;
-    max-width: 350px;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .stack .row .item {
-    padding: 4px;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .stack .row .item h4 {
-    font-size: 12.2px;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .stack .withTwo {
-    gap: 40px;
-  }
-  .boss .swipper__container .right_slide .card_item .benechat__two .btn_section__button {
-    padding: 18px 27px;
-  }
-  .boss .swipper__container .right_slide > div {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(136, 141, 158, 0.71);
-  }
-  .boss .swipper__container .button_section button {
-    position: absolute;
-    left: 60%;
-    top: 50%;
-    z-index: 100;
   }
 }
 @media (max-width: 1000px) {
@@ -1210,7 +1208,7 @@ body {
   }
   .boss .contact .rectangle .form {
     margin-top: 50px;
-    justify-content: flex-start;
+    justify-content: flex-end;
     padding-left: 30px;
   }
   .boss .contact .rectangle .form__info input {
