@@ -181,7 +181,7 @@ body {
                             padding: 5px;
                             font-size: 32px;
                             font-weight: 300;
-                            line-height: 39.68px;
+                            line-height: 25px;
 
                             z-index: 6;
 
@@ -363,6 +363,10 @@ body {
                         button:hover {
                             scale: 1.1;
                         }
+
+                        .rotating_star {
+                            margin-right: 20px;
+                        }
                     }
                 }
             }
@@ -543,6 +547,12 @@ body {
                         rgba(233, 208, 70, 0.7), 
                         rgba(186, 126, 224, 0.8), 
                         rgba(127, 172, 225, 0.9));
+
+                        // background: radial-gradient(
+                        //     rgba(233, 208, 70, 0.7), 
+                        //     rgba(186, 126, 224, 0.8), 
+                        //     rgba(127, 172, 225, 0.9));
+
                         width: 100vh;
                         height: 100vh;
                         opacity: 1;
@@ -655,14 +665,27 @@ body {
             
                     .btn_section {
                         margin-top: 40px;
+
+                        text-align: center;
+
                         display: flex;
                         justify-content: center;
+
             
                         &__button {
             
-                            padding: 20px 30px;
                             background-color: #494D5A;
                             border-radius: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0;
+
+                            a {
+                                padding: 14px 21px;
+                                text-align: center;
+                                size: 20px;
+                            }
                         }
                     }
                 }
@@ -938,7 +961,7 @@ body {
                                 padding: 5px;
                                 font-size: 23px;
                                 font-weight: 300;
-                                line-height: 39.68px;
+                                line-height: 25px;
                                 z-index: 6;
                                 transition: all 0.5s ease-in-out;
                             }
@@ -1115,81 +1138,78 @@ body {
             &__container {
     
                 .left_slide {
+    
+                    .card_item {
+                        // background-color: #7FACE1;
+    
+                        // для benechat
 
-                    .benechat__one {
-
-                        .card_item {
-                            // background-color: #7FACE1;
-        
-                            // для benechat
-
-                            flex-direction: column;
-                            justify-content: center;
-                
-                            .images_section_benechat {
-                                margin: 0 auto;
-                
-                                width: 550px;
-                                height: 523px;
-
-                                .image_1 {
-                                    width: 273 * 1.2px;
-                                    height: 202.2*1.2px;
-                                }
+                        flex-direction: column;
+                        justify-content: center;
             
-                
-                                .image_2 {
-                                    top: 226*1.2px;
-                                    left: 150*1.2px;
-                                    width: 273*1.2px;
-                                    height: 202.2*1.2px;
-                                    z-index: 200;
-                                }
-                
-                                .image_3 {
-                                    top: 104*1.2px;
-                                    left: 60*1.2px;
-                                    z-index: 10;
-                                    width: 300*1.2px;
-                                    height: 202.2*1.2px;
-                                }
-                
-                
-                            }
-                
-                            .benechat_text {
-                                margin-top: 60px;
-                            }
-                    
-                            .images_section__tickets_two {
-                                margin: 0 auto;
-                
-                                width: 560px;
-                                height: 473px;
-                
-                                img {
-                                    width: 408px;
-                                    height: 285px;
-                                }
-                
-                                .image_1 {
-                                    top: 116px;
-                                    right: 0px;
-                                    z-index: 10;
-                                }
-                            }
+                        .images_section_benechat {
+                            margin: 0 auto;
+            
+                            width: 550px;
+                            height: 523px;
 
-                            .images_section_clipper {
-                                img {
-                                    width: 566px;
-                                    height: 281px;
-                                }
+                            .image_1 {
+                                width: 273 * 1.2px;
+                                height: 202.2*1.2px;
                             }
+        
+            
+                            .image_2 {
+                                top: 226*1.2px;
+                                left: 150*1.2px;
+                                width: 273*1.2px;
+                                height: 202.2*1.2px;
+                                z-index: 200;
+                            }
+            
+                            .image_3 {
+                                top: 104*1.2px;
+                                left: 60*1.2px;
+                                z-index: 10;
+                                width: 300*1.2px;
+                                height: 202.2*1.2px;
+                            }
+            
+            
+                        }
+            
+                        .benechat_text {
+                            margin-top: 60px;
+                        }
                 
-                            h2 {
-                                margin-top: 30px;
-                                font-size: 53px;
+                        .images_section__tickets_two {
+                            margin: 0 auto;
+            
+                            width: 560px;
+                            height: 473px;
+            
+                            img {
+                                width: 408px;
+                                height: 285px;
                             }
+            
+                            .image_1 {
+                                top: 116px;
+                                right: 0px;
+                                z-index: 10;
+                            }
+                        }
+
+                        .images_section_clipper {
+                            img {
+                                width: 566px;
+                                height: 281px;
+                            }
+                        }
+            
+                        h2 {
+                            margin-top: 30px;
+                            font-size: 53px;
                         }
                     }
                 }
@@ -1248,10 +1268,16 @@ body {
                             }
                     
                             .btn_section {
-                    
+                                margin-top: 40px;
+                       
                                 &__button {
                     
-                                    padding: 18px 27px;
+        
+                                    a {
+                                        padding: 14px 21px;
+                                        text-align: center;
+                                        font-size: 15px;
+                                    }
                                 }
                             }
                         }
@@ -1390,12 +1416,6 @@ body {
                 .left_slide {
     
                     .card_item {
-                        // background-color: #7FACE1;
-    
-                        // для benechat
-
-                        flex-direction: column;
-                        justify-content: center;
             
                         .images_section_benechat {
                             margin: 0 auto;
@@ -1410,22 +1430,20 @@ body {
         
             
                             .image_2 {
-                                top: 226px;
-                                left: 150px;
+                                top: 226*0.95px;
+                                left: 150*0.95px;
                                 width: 273px;
                                 height: 202.2px;
                                 z-index: 200;
                             }
             
                             .image_3 {
-                                top: 104px;
-                                left: 60px;
+                                top: 104*0.95px;
+                                left: 60*0.95px;
                                 z-index: 10;
                                 width: 300px;
                                 height: 202.2px;
-                            }
-            
-            
+                            }        
                         }
             
                         .benechat_text {
@@ -1435,17 +1453,17 @@ body {
                         .images_section__tickets_two {
                             margin: 0 auto;
             
-                            width: 560px;
-                            height: 473px;
+                            width: 460px;
+                            height: 400px;
             
                             img {
-                                width: 408px;
-                                height: 285px;
+                                width: 408*0.8px;
+                                height: 285*0.8px;
                             }
             
                             .image_1 {
-                                top: 116px;
-                                right: 0px;
+                                top: 116*0.8px;
+                                right: 20px;
                                 z-index: 10;
                             }
                         }
@@ -1461,23 +1479,21 @@ body {
                             margin-top: 109px;
                             font-size: 53px;
                         }
+
+                        .forTwo {
+                            margin-top: 0px;
+                            font-size: 38px;
+                        }
                     }
                 }
     
                 .right_slide {
     
                     .card_item {
-
-                        flex-direction: column;
-                        justify-content: center;
     
                         .description {
             
-                            margin: 0 auto;
-                
                             &__title {
-                                color: #D9E6F5;
-                                font-size: 30px;   
                             }
 
                             .videoticket {
@@ -1496,63 +1512,39 @@ body {
                             flex-direction: column;
                 
                             margin: 102px auto 0px;
-                            padding: 26px 25px;
+                            padding: 0px;
                             background-color: #FEFEFE29;
                             border-radius: 27px;
                 
-                            max-width: 410px;
+                            width: 300px;
                 
                             .row {
                 
-                                display: flex;
-                                justify-content: space-around;
-                                align-items: flex-end;
                 
                                 .item {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    padding: 6px;
+                                    padding: 4px;
                 
                                     h4 {
                                         font-size: 13px;
-                                        color: #464D63;
-                                        text-align: center;
-                                        font-weight: 600;
-                
-                                        font-family: "Kadwa", serif;
+                                    }
+
+                                    img {
+                                        width: 73%;
+                                        height: 73%;
                                     }
                                 }
                             }
                 
                             .withTwo {
-                                justify-content: center;
-                                gap: 50px;
+                                gap: 20px;
                             }
                         }
                 
-                        .btn_section {
-                            margin-top: 40px;
-                            display: flex;
-                            justify-content: center;
-                
-                            &__button {
-                
-                                padding: 20px 30px;
-                                background-color: #494D5A;
-                                border-radius: 30px;
-                            }
-            
-
-                        }
                     }
 
                 }
     
                 .right_slide > div {
-                    height: 100%;
-                    width: 100%;
-                    background-color: rgb(96, 97, 97);
                 }
     
                 .button_section {
@@ -1565,15 +1557,9 @@ body {
                     }
     
                     .down_button {
-                        transform: translateX(-100%);
-                        border-top-left-radius: 5px;
-                        border-bottom-left-radius: 5px;
                     }
     
                     .up_button {
-                        transform: translateY(-100%);
-                        border-top-right-radius: 5px;
-                        border-bottom-right-radius: 5px;
                     }
                 }
             }
@@ -1727,6 +1713,7 @@ body {
 
                             .rotating_star {
                                 width: 50px;
+                                
                             }
                         }
                     }
