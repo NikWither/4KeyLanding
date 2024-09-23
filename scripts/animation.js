@@ -144,3 +144,36 @@ gsap.to(star, {
     repeat: -1,       // Повторение бесконечно
     ease: "linear"    // Равномерное вращение
 });
+
+// шаги проекта
+
+gsap.registerPlugin(ScrollTrigger);
+const steps = document.querySelectorAll('.step');
+
+// анимация для каждого шага
+steps.forEach((step) => {
+    gsap.fromTo(step, {
+        opacity: 0.3,
+        y: 100
+    }, {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+            trigger: step,
+            start: "top center+=200",
+            end: "bottom midle",
+            toggleActions: "play none none reverse",
+            onEnter: () => step.classList.add('active'),
+            onLeaveBack: () => step.classList.remove('active')
+        }
+    });
+});
+
+// закрепление секции до конца анимации всех шагов
+// ScrollTrigger.create({
+//     trigger: ".organizeWork",
+//     pin: true,  // Закрепляем секцию
+//     start: "top top",  // Начало секции
+//     end: () => "+=" + document.querySelector('.organizeWork').offsetHeight,  // Окончание, когда все шаги прокручены
+//     scrub: true,  // Плавное перемещение по скроллу
+// });

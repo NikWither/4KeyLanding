@@ -42,11 +42,10 @@ function getSlider(job)
             jobSlide.classList.remove("active");
 
         }
-        console.log(jobSlide);
     })
 }
 
-// добавление картинок
+// добавление картинок к блокам
 function getImageSlider(slider)
 {
     blocks.forEach((block) => {
@@ -69,3 +68,56 @@ buttonContact.addEventListener('click', () => {
         behavior: 'smooth' // Плавный скролл
     });
 })
+
+ // секция с цифрами
+
+clients = document.querySelector(".clients"); // 70
+experience = document.querySelector(".experience"); // 10+
+projects = document.querySelector(".projects"); // 90+
+members = document.querySelector(".members"); // 15
+
+const countTargetClients = 70;
+const countTargetExperience = 10; // +
+const countTargetProjects = 90; // +
+const countTargetMembers = 15; 
+
+let countClients = 0;
+let countExperience = 0; // +
+let countProjects = 0; // +
+let countMembers = 0;
+
+const intervalMembers = setInterval(() => {
+    countMembers++;
+    members.textContent = countMembers;
+    if (countMembers === countTargetMembers) {
+        clearInterval(intervalMembers);  // Остановить, когда достигнет 100
+    }
+}, 150);
+
+const intervalExperience = setInterval(() => {
+    countExperience++;
+    experience.textContent = countExperience;
+    if (countExperience === countTargetExperience) {
+        clearInterval(intervalExperience);  // Остановить, когда достигнет 100
+    }
+}, 120);
+
+
+const intervalProjects = setInterval(() => {
+    countProjects++;
+    projects.textContent = countProjects;
+    if (countProjects === countTargetProjects) {
+        clearInterval(intervalProjects);  // Остановить, когда достигнет 100
+    }
+}, 20);
+
+
+ 
+const intervalClients = setInterval(() => {
+    countClients++;
+    clients.textContent = countClients;
+    if (countClients === countTargetClients) {
+        clearInterval(intervalClients);  // Остановить, когда достигнет 100
+    }
+}, 30);
+

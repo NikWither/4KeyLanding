@@ -5,6 +5,20 @@ html {
 body {
     background-color: rgba(73, 77, 90, 1);
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#642bff, #ff22e6);
+    border-radius: 10px;
+}
+
 // главный контейнер
 .boss {
     font-family: "Unbounded", sans-serif;
@@ -148,8 +162,79 @@ body {
             }
         }
     }
+
+    .weAre {
+
+        margin: 0px 50px;
+
+        &__first {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .animation {
+                img {
+                }
+            }
+
+            .text {
+
+                width: 830px;
+                p {
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: 40px;
+
+                    span {
+                        color: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+                    }
+                }
+            }
+        }
+
+        &__second {
+
+
+            .services {
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    gap: 20px;
+
+                    h3 {
+                        width: 315px;
+                        padding-top: 22px;
+                        color: rgba(255, 255, 255, 0.33);
+                        font-size: 20px;
+                        font-weight: 200;
+                    }
+
+                    ul {
+                        padding-top: 20px;
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 20px;
+                        align-items: center;
+    
+                        li {
+                            width: 185px;
+                            padding: 6px 25px;
+                            border: 1px solid rgba(255, 255, 255, 0.8);
+                            border-radius: 100px;
+
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
     // слайдер с работами 
     .slider {
+
+        margin-top: 142px;
 
         background-color: #494D5A;
         color: #ffffff;
@@ -181,7 +266,7 @@ body {
                             padding: 5px;
                             font-size: 32px;
                             font-weight: 300;
-                            line-height: 25px;
+                            line-height: 50px;
 
                             z-index: 6;
 
@@ -775,6 +860,42 @@ body {
             }
         }
     }
+    // органайз ворк видно же
+    .organizeWork {
+        width: 1250px;
+        height: 100vh;
+        margin: 0 auto;
+
+        .organizeWork {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 176px;
+            
+            .left {
+                text-align: center;
+                width: 500px;
+                h3 {
+                    padding: 26px 0px;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 49.6px;
+                }
+            }
+            .right {
+                text-align: center;
+                flex-direction: column;
+                p {
+                    color: rgba(105, 107, 121, 1);
+                    font-size: 40px;
+                    font-weight: 400;
+                    padding: 26px 0px;
+                    line-height: 49.6px;
+                }
+            }
+            margin-bottom: 100px;
+        }
+    }
     // секция контакты
     .contact {
 
@@ -809,10 +930,9 @@ body {
 
                 &__info {
 
-                    
                     input {
                         margin-left: 22px;
-                        width: 670px;
+                        // width: 670px;
                         height: 39px;
                     }
 
@@ -833,6 +953,24 @@ body {
 
                     .email {
                         margin-top: 30px;
+                    }
+
+                    .checkboxSec {
+                        margin-top: 41px;
+                        display: flex;
+                        align-items: center;
+                        
+                        input {
+                            margin: 0;
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        p {
+                            margin-left: 12px;
+                            font-size: 20px;
+                            font-weight: 300;
+                        }
                     }
 
                     .button__section {
@@ -961,7 +1099,7 @@ body {
                                 padding: 5px;
                                 font-size: 23px;
                                 font-weight: 300;
-                                line-height: 25px;
+                                line-height: 35px;
                                 z-index: 6;
                                 transition: all 0.5s ease-in-out;
                             }

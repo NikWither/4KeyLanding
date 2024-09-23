@@ -7,6 +7,19 @@ body {
   background-color: rgb(73, 77, 90);
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 10px;
+}
+
 .boss {
   font-family: "Unbounded", sans-serif;
   color: #F1F1F1;
@@ -113,7 +126,53 @@ body {
   background: linear-gradient(90deg, rgba(232, 153, 191, 0.32) 8%, rgba(185, 178, 142, 0.32) 30.68%, rgba(175, 158, 175, 0.32) 52.4%, rgba(159, 165, 195, 0.32) 81.66%);
   border-radius: 36px;
 }
+.boss .weAre {
+  margin: 0px 50px;
+}
+.boss .weAre__first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boss .weAre__first .text {
+  width: 830px;
+}
+.boss .weAre__first .text p {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.boss .weAre__first .text p span {
+  color: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+}
+.boss .weAre__second .services div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.boss .weAre__second .services div h3 {
+  width: 315px;
+  padding-top: 22px;
+  color: rgba(255, 255, 255, 0.33);
+  font-size: 20px;
+  font-weight: 200;
+}
+.boss .weAre__second .services div ul {
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+.boss .weAre__second .services div ul li {
+  width: 185px;
+  padding: 6px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 100px;
+  text-align: center;
+}
 .boss .slider {
+  margin-top: 142px;
   background-color: #494D5A;
   color: #ffffff;
 }
@@ -138,7 +197,7 @@ body {
   padding: 5px;
   font-size: 32px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 50px;
   z-index: 6;
   transition: all 0.5s ease-in-out;
 }
@@ -527,6 +586,39 @@ body {
   width: 19px;
   height: 19px;
 }
+.boss .organizeWork {
+  width: 1250px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.boss .organizeWork .organizeWork {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 176px;
+  margin-bottom: 100px;
+}
+.boss .organizeWork .organizeWork .left {
+  text-align: center;
+  width: 500px;
+}
+.boss .organizeWork .organizeWork .left h3 {
+  padding: 26px 0px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49.6px;
+}
+.boss .organizeWork .organizeWork .right {
+  text-align: center;
+  flex-direction: column;
+}
+.boss .organizeWork .organizeWork .right p {
+  color: rgb(105, 107, 121);
+  font-size: 40px;
+  font-weight: 400;
+  padding: 26px 0px;
+  line-height: 49.6px;
+}
 .boss .contact {
   display: flex;
   justify-content: center;
@@ -554,7 +646,6 @@ body {
 }
 .boss .contact .rectangle .form__info input {
   margin-left: 22px;
-  width: 670px;
   height: 39px;
 }
 .boss .contact .rectangle .form__info input::-moz-placeholder {
@@ -577,6 +668,21 @@ body {
 }
 .boss .contact .rectangle .form__info .email {
   margin-top: 30px;
+}
+.boss .contact .rectangle .form__info .checkboxSec {
+  margin-top: 41px;
+  display: flex;
+  align-items: center;
+}
+.boss .contact .rectangle .form__info .checkboxSec input {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+.boss .contact .rectangle .form__info .checkboxSec p {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 300;
 }
 .boss .contact .rectangle .form__info .button__section {
   margin-top: 75px;
@@ -668,7 +774,7 @@ body {
     padding: 5px;
     font-size: 23px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 35px;
     z-index: 6;
     transition: all 0.5s ease-in-out;
   }
