@@ -32,6 +32,7 @@ body {
 }
 .boss .non_visible {
   display: none;
+  visibility: hidden;
   opacity: 0;
 }
 .boss .loader {
@@ -143,7 +144,11 @@ body {
   line-height: 40px;
 }
 .boss .weAre__first .text p span {
-  color: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+  background: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; /* Для поддержки других браузеров */
 }
 .boss .weAre__second .services div {
   display: flex;
@@ -163,6 +168,7 @@ body {
   justify-content: flex-start;
   gap: 20px;
   align-items: center;
+  transition: all 2s ease-in-out;
 }
 .boss .weAre__second .services div ul li {
   width: 185px;
@@ -170,6 +176,17 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 100px;
   text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.boss .weAre__second .services div ul li:hover {
+  background: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+  border: 1px solid #FFC149;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; /* Для поддержки других браузеров */
 }
 .boss .slider {
   margin-top: 142px;
@@ -217,7 +234,7 @@ body {
 }
 .boss .slider .first .blocks .row .block:hover p {
   font-weight: 400;
-  scale: 1.2;
+  scale: 1.09;
 }
 .boss .slider .first .blocks .row .bottom {
   width: 654px;
@@ -358,6 +375,7 @@ body {
 }
 .boss .swipper {
   scroll-snap-align: start;
+  margin-bottom: 176px;
 }
 .boss .swipper__container {
   position: relative;
@@ -519,7 +537,8 @@ body {
   justify-content: center;
   padding: 0;
 }
-.boss .swipper__container .right_slide .card_item .btn_section__button a {
+.boss .swipper__container .right_slide .card_item .btn_section__button span {
+  display: block;
   padding: 14px 21px;
   text-align: center;
   size: 20px;
@@ -595,7 +614,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin-top: 176px;
   margin-bottom: 100px;
 }
 .boss .organizeWork .organizeWork .left {
@@ -618,6 +636,13 @@ body {
   font-weight: 400;
   padding: 26px 0px;
   line-height: 49.6px;
+}
+.boss .organizeWork .organizeWork .right .active {
+  background: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; /* Для поддержки других браузеров */
 }
 .boss .contact {
   display: flex;
@@ -678,6 +703,9 @@ body {
   margin: 0;
   width: 20px;
   height: 20px;
+}
+.boss .contact .rectangle .form__info .checkboxSec input:checked {
+  background-color: #eeaf1d;
 }
 .boss .contact .rectangle .form__info .checkboxSec p {
   margin-left: 12px;

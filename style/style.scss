@@ -16,6 +16,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(#642bff, #ff22e6);
+    // background: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
     border-radius: 10px;
 }
 
@@ -37,6 +38,7 @@ body {
     // отключалка
     .non_visible {
         display: none;
+        visibility: hidden;
         opacity: 0;
     }
     // анимации 
@@ -186,7 +188,12 @@ body {
                     line-height: 40px;
 
                     span {
-                        color: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+                        background: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+                    
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent; /* Для поддержки других браузеров */
                     }
                 }
             }
@@ -217,6 +224,8 @@ body {
                         justify-content: flex-start;
                         gap: 20px;
                         align-items: center;
+
+                        transition: all 2s ease-in-out;
     
                         li {
                             width: 185px;
@@ -225,6 +234,24 @@ body {
                             border-radius: 100px;
 
                             text-align: center;
+
+                            font-size: 20px;
+                            font-weight: 400;
+
+                            cursor: pointer;
+                            // transition: background 0.5s ease; /* Используем краткую запись */
+                            // transition-duration: 0.5s; /* Указываем продолжительность */
+                        }
+
+                        li:hover {
+                            background: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.2%);
+
+                            border: 1px solid #FFC149;
+                    
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent; /* Для поддержки других браузеров */
                         }
                     }
                 }
@@ -293,7 +320,7 @@ body {
 
                     .block:hover p {
                         font-weight: 400;
-                        scale: 1.2
+                        scale: 1.09
                     }
 
                     // for manager
@@ -766,11 +793,13 @@ body {
                             justify-content: center;
                             padding: 0;
 
-                            a {
+                            span {
+                                display: block;
                                 padding: 14px 21px;
                                 text-align: center;
                                 size: 20px;
                             }
+
                         }
                     }
                 }
@@ -859,6 +888,8 @@ body {
                 }
             }
         }
+
+        margin-bottom: 176px;
     }
     // органайз ворк видно же
     .organizeWork {
@@ -870,7 +901,6 @@ body {
             display: flex;
             justify-content: space-around;
             align-items: flex-start;
-            margin-top: 176px;
             
             .left {
                 text-align: center;
@@ -891,6 +921,16 @@ body {
                     font-weight: 400;
                     padding: 26px 0px;
                     line-height: 49.6px;
+                }
+
+                .active {
+                    background: linear-gradient(90deg, #FFC149 0%, #B23AFE 98.1%);
+                    
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent; /* Для поддержки других браузеров */
+
                 }
             }
             margin-bottom: 100px;
@@ -965,6 +1005,11 @@ body {
                             width: 20px;
                             height: 20px;
                         }
+
+                        input:checked {
+                            background-color: #eeaf1d;
+                        }
+
 
                         p {
                             margin-left: 12px;

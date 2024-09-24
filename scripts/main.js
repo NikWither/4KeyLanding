@@ -86,38 +86,64 @@ let countExperience = 0; // +
 let countProjects = 0; // +
 let countMembers = 0;
 
-const intervalMembers = setInterval(() => {
-    countMembers++;
-    members.textContent = countMembers;
-    if (countMembers === countTargetMembers) {
-        clearInterval(intervalMembers);  // Остановить, когда достигнет 100
+function runNumber() {
+    const intervalMembers = setInterval(() => {
+        countMembers++;
+        members.textContent = countMembers;
+        if (countMembers === countTargetMembers) {
+            clearInterval(intervalMembers);  // Остановить, когда достигнет 100
+        }
+    }, 150);
+
+    const intervalExperience = setInterval(() => {
+        countExperience++;
+        experience.textContent = countExperience;
+        if (countExperience === countTargetExperience) {
+            experience.textContent += '+';
+            clearInterval(intervalExperience);  // Остановить, когда достигнет 100
+        }
+    }, 120);
+
+
+    const intervalProjects = setInterval(() => {
+        countProjects++;
+        projects.textContent = countProjects;
+        if (countProjects === countTargetProjects) {
+            projects.textContent += '+';
+            clearInterval(intervalProjects);  // Остановить, когда достигнет 100
+        }
+    }, 20);
+    
+    const intervalClients = setInterval(() => {
+        countClients++;
+        clients.textContent = countClients;
+        if (countClients === countTargetClients) {
+            clearInterval(intervalClients);  // Остановить, когда достигнет 100
+        }
+    }, 30);
+}
+
+window.addEventListener('scroll', function() {
+    const section = document.querySelector('#informationAboutExperience');
+    console.log(section);
+    const sectionPosition = section.getBoundingClientRect();
+    
+    if (sectionPosition.top <= window.innerHeight && sectionPosition.bottom >= 0) {
+        runNumber();
+        // Удаляем слушатель, чтобы функция не вызывалась повторно
+        window.removeEventListener('scroll', arguments.callee);
     }
-}, 150);
+});
 
-const intervalExperience = setInterval(() => {
-    countExperience++;
-    experience.textContent = countExperience;
-    if (countExperience === countTargetExperience) {
-        clearInterval(intervalExperience);  // Остановить, когда достигнет 100
-    }
-}, 120);
+// активирование чекбокса (send a demo)
 
+allButtons = document.querySelectorAll(".btn_section__button");
+console.log(allButtons);
 
-const intervalProjects = setInterval(() => {
-    countProjects++;
-    projects.textContent = countProjects;
-    if (countProjects === countTargetProjects) {
-        clearInterval(intervalProjects);  // Остановить, когда достигнет 100
-    }
-}, 20);
+const sendADemoCheckbox = document.querySelector(".sendADemoCheckbox");
 
-
- 
-const intervalClients = setInterval(() => {
-    countClients++;
-    clients.textContent = countClients;
-    if (countClients === countTargetClients) {
-        clearInterval(intervalClients);  // Остановить, когда достигнет 100
-    }
-}, 30);
-
+allButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        sendADemoCheckbox.checked = true;
+    })
+})

@@ -160,20 +160,21 @@ steps.forEach((step) => {
         y: 0,
         scrollTrigger: {
             trigger: step,
-            start: "top center+=200",
-            end: "bottom midle",
+            start: "top 10%",
+            end: "bottom 10%",
             toggleActions: "play none none reverse",
+            // scrub: true,
             onEnter: () => step.classList.add('active'),
             onLeaveBack: () => step.classList.remove('active')
         }
     });
 });
 
-// закрепление секции до конца анимации всех шагов
-// ScrollTrigger.create({
-//     trigger: ".organizeWork",
-//     pin: true,  // Закрепляем секцию
-//     start: "top top",  // Начало секции
-//     end: () => "+=" + document.querySelector('.organizeWork').offsetHeight,  // Окончание, когда все шаги прокручены
-//     scrub: true,  // Плавное перемещение по скроллу
-// });
+//закрепление секции до конца анимации всех шагов
+ScrollTrigger.create({
+    trigger: ".organizeWork",
+    pin: true,  // Закрепляем секцию
+    start: "top top",  // Начало секции
+    end: () => "+=" + document.querySelector('.organizeWork').offsetHeight,  // Окончание, когда все шаги прокручены
+    scrub: true,  // Плавное перемещение по скроллу
+});
